@@ -8,24 +8,76 @@
 
 /* Begin PBXBuildFile section */
 		176D4FA120768E7200C89EA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176D4FA020768E7200C89EA4 /* AppDelegate.swift */; };
-		176D4FA320768E7200C89EA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176D4FA220768E7200C89EA4 /* ViewController.swift */; };
-		176D4FA620768E7200C89EA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 176D4FA420768E7200C89EA4 /* Main.storyboard */; };
 		176D4FA820768E7400C89EA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 176D4FA720768E7400C89EA4 /* Assets.xcassets */; };
 		176D4FAB20768E7400C89EA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 176D4FA920768E7400C89EA4 /* LaunchScreen.storyboard */; };
+		176D4FBB20768EAC00C89EA4 /* DijkstraLocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 176D4FB920768EAC00C89EA4 /* DijkstraLocationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		176D4FBE20768EAC00C89EA4 /* DijkstraLocationManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 176D4FB720768EAC00C89EA4 /* DijkstraLocationManager.framework */; };
+		176D4FBF20768EAC00C89EA4 /* DijkstraLocationManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 176D4FB720768EAC00C89EA4 /* DijkstraLocationManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		176D4FCB20768ECD00C89EA4 /* DijkstraAppSharedTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176D4FCA20768ECD00C89EA4 /* DijkstraAppSharedTest.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		176D4FBC20768EAC00C89EA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 176D4F9520768E7200C89EA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 176D4FB620768EAC00C89EA4;
+			remoteInfo = DijkstraLocationManager;
+		};
+		176D4FCD20768ECD00C89EA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 176D4F9520768E7200C89EA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 176D4F9C20768E7200C89EA4;
+			remoteInfo = DijkstraAppBaseHome;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		176D4FC320768EAC00C89EA4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				176D4FBF20768EAC00C89EA4 /* DijkstraLocationManager.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		176D4F9D20768E7200C89EA4 /* DijkstraAppBaseHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DijkstraAppBaseHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		176D4FA020768E7200C89EA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		176D4FA220768E7200C89EA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		176D4FA520768E7200C89EA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		176D4FA720768E7400C89EA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		176D4FAA20768E7400C89EA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		176D4FAC20768E7400C89EA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		176D4FB720768EAC00C89EA4 /* DijkstraLocationManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DijkstraLocationManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		176D4FB920768EAC00C89EA4 /* DijkstraLocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DijkstraLocationManager.h; sourceTree = "<group>"; };
+		176D4FBA20768EAC00C89EA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		176D4FC820768ECD00C89EA4 /* DijkstraAppSharedTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DijkstraAppSharedTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		176D4FCA20768ECD00C89EA4 /* DijkstraAppSharedTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DijkstraAppSharedTest.swift; sourceTree = "<group>"; };
+		176D4FCC20768ECD00C89EA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		176D4F9A20768E7200C89EA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				176D4FBE20768EAC00C89EA4 /* DijkstraLocationManager.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		176D4FB320768EAC00C89EA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		176D4FC520768ECD00C89EA4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				176D4F9F20768E7200C89EA4 /* DijkstraAppBaseHome */,
+				176D4FB820768EAC00C89EA4 /* DijkstraLocationManager */,
+				176D4FC920768ECD00C89EA4 /* DijkstraAppSharedTest */,
 				176D4F9E20768E7200C89EA4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				176D4F9D20768E7200C89EA4 /* DijkstraAppBaseHome.app */,
+				176D4FB720768EAC00C89EA4 /* DijkstraLocationManager.framework */,
+				176D4FC820768ECD00C89EA4 /* DijkstraAppSharedTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,8 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				176D4FA020768E7200C89EA4 /* AppDelegate.swift */,
-				176D4FA220768E7200C89EA4 /* ViewController.swift */,
-				176D4FA420768E7200C89EA4 /* Main.storyboard */,
 				176D4FA720768E7400C89EA4 /* Assets.xcassets */,
 				176D4FA920768E7400C89EA4 /* LaunchScreen.storyboard */,
 				176D4FAC20768E7400C89EA4 /* Info.plist */,
@@ -64,7 +118,36 @@
 			path = DijkstraAppBaseHome;
 			sourceTree = "<group>";
 		};
+		176D4FB820768EAC00C89EA4 /* DijkstraLocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				176D4FB920768EAC00C89EA4 /* DijkstraLocationManager.h */,
+				176D4FBA20768EAC00C89EA4 /* Info.plist */,
+			);
+			path = DijkstraLocationManager;
+			sourceTree = "<group>";
+		};
+		176D4FC920768ECD00C89EA4 /* DijkstraAppSharedTest */ = {
+			isa = PBXGroup;
+			children = (
+				176D4FCA20768ECD00C89EA4 /* DijkstraAppSharedTest.swift */,
+				176D4FCC20768ECD00C89EA4 /* Info.plist */,
+			);
+			path = DijkstraAppSharedTest;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		176D4FB420768EAC00C89EA4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				176D4FBB20768EAC00C89EA4 /* DijkstraLocationManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		176D4F9C20768E7200C89EA4 /* DijkstraAppBaseHome */ = {
@@ -74,15 +157,53 @@
 				176D4F9920768E7200C89EA4 /* Sources */,
 				176D4F9A20768E7200C89EA4 /* Frameworks */,
 				176D4F9B20768E7200C89EA4 /* Resources */,
+				176D4FC320768EAC00C89EA4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				176D4FBD20768EAC00C89EA4 /* PBXTargetDependency */,
 			);
 			name = DijkstraAppBaseHome;
 			productName = DijkstraAppBaseHome;
 			productReference = 176D4F9D20768E7200C89EA4 /* DijkstraAppBaseHome.app */;
 			productType = "com.apple.product-type.application";
+		};
+		176D4FB620768EAC00C89EA4 /* DijkstraLocationManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 176D4FC020768EAC00C89EA4 /* Build configuration list for PBXNativeTarget "DijkstraLocationManager" */;
+			buildPhases = (
+				176D4FB220768EAC00C89EA4 /* Sources */,
+				176D4FB320768EAC00C89EA4 /* Frameworks */,
+				176D4FB420768EAC00C89EA4 /* Headers */,
+				176D4FB520768EAC00C89EA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DijkstraLocationManager;
+			productName = DijkstraLocationManager;
+			productReference = 176D4FB720768EAC00C89EA4 /* DijkstraLocationManager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		176D4FC720768ECD00C89EA4 /* DijkstraAppSharedTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 176D4FCF20768ECD00C89EA4 /* Build configuration list for PBXNativeTarget "DijkstraAppSharedTest" */;
+			buildPhases = (
+				176D4FC420768ECD00C89EA4 /* Sources */,
+				176D4FC520768ECD00C89EA4 /* Frameworks */,
+				176D4FC620768ECD00C89EA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				176D4FCE20768ECD00C89EA4 /* PBXTargetDependency */,
+			);
+			name = DijkstraAppSharedTest;
+			productName = DijkstraAppSharedTest;
+			productReference = 176D4FC820768ECD00C89EA4 /* DijkstraAppSharedTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,6 +217,13 @@
 				TargetAttributes = {
 					176D4F9C20768E7200C89EA4 = {
 						CreatedOnToolsVersion = 9.3;
+					};
+					176D4FB620768EAC00C89EA4 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					176D4FC720768ECD00C89EA4 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 176D4F9C20768E7200C89EA4;
 					};
 				};
 			};
@@ -113,6 +241,8 @@
 			projectRoot = "";
 			targets = (
 				176D4F9C20768E7200C89EA4 /* DijkstraAppBaseHome */,
+				176D4FB620768EAC00C89EA4 /* DijkstraLocationManager */,
+				176D4FC720768ECD00C89EA4 /* DijkstraAppSharedTest */,
 			);
 		};
 /* End PBXProject section */
@@ -124,7 +254,20 @@
 			files = (
 				176D4FAB20768E7400C89EA4 /* LaunchScreen.storyboard in Resources */,
 				176D4FA820768E7400C89EA4 /* Assets.xcassets in Resources */,
-				176D4FA620768E7200C89EA4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		176D4FB520768EAC00C89EA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		176D4FC620768ECD00C89EA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +278,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				176D4FA320768E7200C89EA4 /* ViewController.swift in Sources */,
 				176D4FA120768E7200C89EA4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		176D4FB220768EAC00C89EA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		176D4FC420768ECD00C89EA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				176D4FCB20768ECD00C89EA4 /* DijkstraAppSharedTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		176D4FA420768E7200C89EA4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				176D4FA520768E7200C89EA4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		176D4FBD20768EAC00C89EA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 176D4FB620768EAC00C89EA4 /* DijkstraLocationManager */;
+			targetProxy = 176D4FBC20768EAC00C89EA4 /* PBXContainerItemProxy */;
 		};
+		176D4FCE20768ECD00C89EA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 176D4F9C20768E7200C89EA4 /* DijkstraAppBaseHome */;
+			targetProxy = 176D4FCD20768ECD00C89EA4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		176D4FA920768E7400C89EA4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -312,6 +474,102 @@
 			};
 			name = Release;
 		};
+		176D4FC120768EAC00C89EA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = KZ59LHH5H4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DijkstraLocationManager/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.uniba.DijkstraLocationManager;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		176D4FC220768EAC00C89EA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = KZ59LHH5H4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DijkstraLocationManager/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.uniba.DijkstraLocationManager;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		176D4FD020768ECD00C89EA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KZ59LHH5H4;
+				INFOPLIST_FILE = DijkstraAppSharedTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.uniba.DijkstraAppSharedTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DijkstraAppBaseHome.app/DijkstraAppBaseHome";
+			};
+			name = Debug;
+		};
+		176D4FD120768ECD00C89EA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KZ59LHH5H4;
+				INFOPLIST_FILE = DijkstraAppSharedTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.uniba.DijkstraAppSharedTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DijkstraAppBaseHome.app/DijkstraAppBaseHome";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -329,6 +587,24 @@
 			buildConfigurations = (
 				176D4FB020768E7400C89EA4 /* Debug */,
 				176D4FB120768E7400C89EA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		176D4FC020768EAC00C89EA4 /* Build configuration list for PBXNativeTarget "DijkstraLocationManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				176D4FC120768EAC00C89EA4 /* Debug */,
+				176D4FC220768EAC00C89EA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		176D4FCF20768ECD00C89EA4 /* Build configuration list for PBXNativeTarget "DijkstraAppSharedTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				176D4FD020768ECD00C89EA4 /* Debug */,
+				176D4FD120768ECD00C89EA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
